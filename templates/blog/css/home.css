@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  width: 100vw;
+  height: 8vh;
+  background: #bababa;
+  display: flex;
+  flex: .95;
+  justify-content: center;
+}
+
+.nav .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: .475;
+}
+
+  #logo {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.nav .furtherlinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: .475;
+}
+
+.navlink {
+  padding: .75rem;
+}
+
+input#search {
+  margin-left: 1rem;
+}
