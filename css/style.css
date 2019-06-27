@@ -228,11 +228,17 @@ h2 {
 }
 
 .contact {
-  padding-left: 8%;
+  display: flex;
+flex-flow: column;
+align-items: center;
 }
 
 form {
   margin-top: 2rem;
+  display: flex;
+    text-align: center;
+    flex-flow: column;
+    width: 30%;
 }
 
 input {
@@ -262,6 +268,7 @@ textarea {
   font-size: 2rem;
   height: 15rem;
   font-family: 'Open Sans';
+  width: 100%;
 }
 
 textarea::placeholder {
