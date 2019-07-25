@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'Gosha Sans';
+    src: url('../GoshaSans-Regular.woff2') format('woff2'),
+        url('../GoshaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gosha Sans';
+    src: url('../GoshaSans-Bold.woff2') format('woff2'),
+        url('../GoshaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+.nav {
+  width: 80vw;
+  height: 5vh;
+  margin-top: 1rem;
+  position: absolute; /*switch to fixed if broken*/
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-bottom: 2px white solid;
+}
+
+.logo {
+  flex: .5;
+  color: white;
+  font-family: 'Gosha Sans';
+  font-size: 2rem;
+}
+
+.menu {
+  flex: .5;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-family: 'Libre Baskerville'
+}
+
+.fullmenu {
+  position: absolute;
+  opacity: 0;
+  cursor: none;
+  font-size: 1.25rem;
+  transition: all .33s ease-in-out;
+  margin-top: 6rem;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li a {
+  padding: 7px;
+  transition: color .25s ease-in-out;
+}
+
+li a:hover {
+  color: #f9e318;
+}
+
+#menubutton {
+  opacity: 1;
+  font-size: 1.25rem;
+  z-index: 999;
+  transition: color .25s ease-in-out;
+}
+
+#menubutton:hover {
+  color: #f9e318;
+}
+
+.hero {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.heroplacement {
+  background-image: url(../bgplacement.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.herotype {
+  color: white;
+  font-family: 'Gosha Sans';
+  font-size: 4rem;
+  margin-bottom: 5%;
+}
+
+.herodivider {
+  width: 80vw;
+  height: 5vh;
+  border-top: 2px white solid;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1rem;
+}
+
+.bodycontainer {
+  max-width: 80vw;
+  margin: 0 auto;
+  background: whitesmoke;
+}
+
+.sec {
+  padding: 5rem;
+}
+
+.sec h1 {
+  font-family: 'Gosha Sans', arial, sans-serif;
+  font-size: 3rem;
+}
+
+.sec p {
+  font-family: 'Libre Baskerville', times, serif;
+  font-size: 1.5rem;
+}
+
+.img {
+  width: 100%;
+  height: 45vh;
+  background: red;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: ;
+}
