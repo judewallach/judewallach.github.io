@@ -152,14 +152,97 @@ li a:hover {
 .sec p {
   font-family: 'Libre Baskerville', times, serif;
   font-size: 1.5rem;
+  text-align: justify;
 }
 
 .img {
   width: 100%;
-  height: 45vh;
+  height: 40vh;
   background: red;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: ;
+}
+
+.swiper-container {
+  width: 93%;
+  height: auto;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet-active {
+  background: black;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 0;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  text-align: right;
+  position: absolute;
+  top: 0;
+}
+
+.enter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  border-top: 4px black solid;
+  pointer-events: none;
+  transition: all .33s ease-in-out;
+}
+
+
+
+button {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding: 1rem;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 3rem;
+  font-family: 'Gosha Sans', arial, sans-serif;
+}
+
+button a {
+  color: #f9e318;
+  transition: all .25s ease-in-out;
+}
+
+button a:hover {
+  color: #ccba0e;
+}
+
+.enter:hovefr {
+  background: black;
+}
+
+.button {
+  pointer-events: auto;
+}
+
+.enter:hover .button {
+  color: yellow;
 }

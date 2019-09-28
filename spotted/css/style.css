@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Uni Sans Thin CAPS';
+    src: url('fonts/UniSansThinCAPS.woff2') format('woff2'),
+        url('fonts/UniSansThinCAPS.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Sans Heavy CAPS';
+    src: url('fonts/UniSansHeavyCAPS.woff2') format('woff2'),
+        url('fonts/UniSansHeavyCAPS.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#particles-js{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: transparent;
+
+}
+
+.nav {
+  position: absolute;
+  right: 4%;
+  top: 7.5%;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.bgimage {
+  width: 29vw;
+  height: 75vh;
+  background-image: url(https://images.unsplash.com/photo-1485518882345-15568b007407?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1281&q=80);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.herotext {
+  position: absolute;
+  bottom: -8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.herotext h1 {
+  text-transform: uppercase;
+  font-size: 11rem;
+  letter-spacing: 1rem;
+}
+
+h1 {
+    font-family: 'Uni Sans Heavy CAPS';
+    font-weight: 900;
+    font-style: normal;
+    color: #ed2939;
+}
+
+.siteinfo {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  position: absolute;
+  top: 45%;
+  left: -14%;
+  transform: rotate(-90deg) translateY(-50%);
+  width: 40vw;
+}
+
+.siteinfo p {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 1.5rem;
+  word-spacing: .333rem;
+  letter-spacing: .05rem;
+}
+
+.sec1 {
+  flex: .45;
+}
+
+.sec2 {
+flex: .1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.sec3 {
+flex: .45;
+text-align: right;
+}
