@@ -110,7 +110,8 @@ p {
 .sec {
   background-color: #1e2526;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 50vh;
   width: 50vw;
   display: inline-block;
@@ -246,4 +247,165 @@ form button {
 
 .backtotop {
   flex: .3333;
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+}
+
+/* Landscape Tablet */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait Phone */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .hero h1 {
+      font-size: 13rem;
+    }
+
+    .secondp {
+      display: none;
+    }
+
+    .aboutme {
+      flex-flow: column;
+    }
+
+    h2 {
+      font-size: 3.5rem;
+    }
+
+    p {
+      font-size: 1.75rem;
+    }
+
+    .portfolio {
+      margin-top: 4rem;
+    }
+
+    .portfolioabout {
+      font-size: 1.492rem;
+    }
+
+    .sec {
+      position: relative;
+    }
+
+    .info {
+      opacity: 1;
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    form {
+      width: 66vw;
+    }
+
+    form button {
+      font-size: 3rem;
+    }
+
+    input::placeholder, textarea::placeholder {
+      font-size: 2.25rem;
+    }
+
+    input {
+      padding-left: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    textarea {
+      padding-left: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+
+/* Portrait Larger Phone */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .hero h1 {
+      font-size: 15rem;
+    }
+
+    .secondp {
+      display: none;
+    }
+
+    h2 {
+      font-size: 3.5rem;
+    }
+
+    p {
+      font-size: 1.75rem;
+    }
+
+    .aboutme {
+      flex-flow: column;
+    }
+
+    .portfolioabout {
+      font-size: 1.49rem;
+    }
+
+    .portfolio {
+      margin-top: 4rem;
+    }
+
+    .sec {
+      position: relative;
+    }
+
+    .info {
+      opacity: 1;
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    form {
+      width: 66vw;
+    }
+
+    form button {
+      font-size: 3rem;
+    }
+}
+
+/* Portrait Bezelless Phone */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
 }
