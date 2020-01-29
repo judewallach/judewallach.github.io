@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('NeueMontreal-Medium.woff2') format('woff2'),
+        url('NeueMontreal-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue MontrealB';
+    src: url('NeueMontreal-Bold.woff2') format('woff2'),
+        url('NeueMontreal-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbutton {
+  position: fixed;
+  top: 4%;
+  right: 2%;
+  z-index: 1;
+}
+
+.nav {
+  width: 0;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  z-index: 998;
+  overflow-x: hidden;
+  transition: 0.5s;
+  right: 0;
+}
+
+.nav .closebtn {
+  position: absolute;
+  color: red;
+  top: 4%;
+  right: 2%;
+  z-index: 999999;
+}
+
+i img {
+  width: 50px;
+  height: auto;
+}
+
+#closebtn {
+  color: white;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'FuturaBold', arial, sans-serif;
+  font-size: 7rem;
+  line-height: 150%;
+  transition: all .5s ease-in-out;
+  opacity: 1;
+}
+
+ul li a:hover {
+  opacity: .5;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+}
+
+ i {
+  color: white;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  background: ;
+  text-transform: uppercase;
+  background-image: url(bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 20%;
+}
+
+
+
+.scroll {
+  height: 30px;
+  padding-top: 30px;
+}
+
+.scroll img {
+  width: 80px;
+  height: auto;
+  margin-top: 20px!important;
+}
+
+#herotext {
+  opacity: 1;
+}
+
+.hero h1 {
+  color: black;
+  font-size: 5rem;
+  transition: all .25s ease-in-out;
+  font-family: 'Neue MontrealB';
+  font-weight: 500;
+  font-style: normal;
+  color: #00f0ff;
+}
+
+i img {
+  width: 50px;
+  height: auto;
+}
+
+img {
+  width: 50px;
+  height: auto;
+}
+
+.herotext {
+  color: black;
+
+
+  font-style: 'Neue MontrealB'
+}
+
+#herotext {
+  top: 50%;
+  left: 50%;
+    position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* Tablets */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* ----------- Retina Laptops ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+ {
+
+}
+
+/* Phones */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+
+}
